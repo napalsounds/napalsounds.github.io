@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Napal</title>
+  <meta name="description" content="wiredwiki App">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Raleway" rel="stylesheet">
+
+</head>
+
+<style>
+
+  body{
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    }
+
+  h1 {
+        font-family: 'Anton', sans-serif;
+        font-weight: bold;
+        font-size: 65px;
+      }
+
+  h2 {
+      font-family: 'Anton', sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+#contenedor{
+      height: 100%;
+      width: 100%
+    }
+
+
+  p-clases{
+    font-size: 17px;
+    text-align: center;
+  }
+
+
+
+  p{
+    font-size: 16px;
+  }
+
+
+  .redondo{
+    border: solid 5px black;
+    border-radius: 50px;
+    margin-bottom: 45px 25px;
+    display: inline;
+    }
+
+
+    .item {
+      width: 100%;
+      height: auto;
+      /*height: auto;
+      top:0;
+      left:0;
+      position:fixed;
+      z-index: -1;*/
+  }
+
+  .carousel-inner {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+  }
+
+  .separador {
+    margin: 50px;
+  }
+
+  .minivideo {
+    align-content: right;
+  }
+
+
+  .navbar {
+      font-size: 22px;
+      /*box-shadow: 2px 2px 5px #999;*/
+      opacity: 0.9;
+  }
+  .navbar-btn {
+    margin-top: 20px;
+  }
+
+  .banner-header{
+    height:200px;
+    width:	50%;
+    display:inline-block;
+    float: left;
+    background: url(img/logo-transparente.png) no-repeat center;
+    background-size: 70%;
+    /*box-shadow: 2px 2px 5px #999;*/
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .banner-header::before {
+    content: "An atmosphere of relaxing lounge music";
+    position: relative;
+    top: 90%;
+    left: 46%;
+  }
+</style>
+
+<body data-spy="scroll" data-target="#my-navbar">
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar"><!--el navbar-fixed-top me pega la navbar a la parte superior del sitio?-->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span><!--Aca pongo la cantidad de spans rayitas que quiero que tenga el el boton de navbar-->
+        </button>
+
+        <a href="http:///www.napal.co"><img src="img/Logo-03.png" border="0" height="80" width="95"></a> <!--class="navbar-brand" aca va el logo de la navbar-->
+      </div><!--Navbar header-->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+        <a href="https://www.facebook.com/napalsounds/" class="btn btn-default navbar-btn navbar-right">En contacto!</a>
+          <ul class="nav navbar-nav" "navbar" style="padding-top:15px;font-size:15px;"><!--Aca van las sections-->
+            <li><a href="#video">Video</a>
+            <li><a href="#audio">Audio</a>
+            <li><a href="#photo">Foto</a>
+            <li><a href="#bio">Bio</a>
+        <!--<li><a href="#blog">Blog</a>
+            <li><a href="#clases">Clases</a>
+            <li><a href="#feedback">Feedback</a>-->
+            <li><a href="#contact">Contacto</a>
+          </ul>
+      </div>
+    </div><!--End of container-->
+  </nav><!--End navbar-->
+
+<div class="banner-header"><!--este es el banner del header-->
+<span class="sr-only">NAPAL</span>
+</div>
+
+  <!--Jumbotron-->
+<div class="jumbotron" style="margin-top: 40px; box-shadow: 1px 2px 5px #999; background-image: url(https://www.samuelburns.co/wp-content/uploads/2017/06/blue-wave.jpg);">
+  <div class="container text-center">
+
+
+    <div class="btn-group" style="padding-top:30px;">
+
+      <a href="https://soundcloud.com/napal-sounds"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-irealpro.png" height="70" width="85" class="btn btn-lg btn-default"></a>
+      <a href="https://www.youtube.com/channel/UCF99JrpkeYg8Lv9jDHF_YPg"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-youtube.png" height="80" width="95" class="btn btn-lg btn-default"></a><!--si a la clase btn le pongo info en vez de warning se vuelve skyblue y si le pongo default se vuelve gris-->
+      <a href="https://soundcloud.com/napal-sounds"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-soundcloud.png" height="90" width="105" class="btn btn-lg btn-default"></a>
+      <a href="https://www.facebook.com/napalsounds/"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-facebook.png" height="100" width="115" class="btn btn-lg btn-default"></a>
+      <a href="https://twitter.com/napalsounds"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-twitter.png" height="90" width="105" class="btn btn-lg btn-default"></a>
+      <a href="https://www.instagram.com/napalsounds/"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-instagram.png" height="80" width="95" class="btn btn-lg btn-default"></a>
+      <a href="https://plus.google.com/107330718390201851795"> <img alt="sigueme en mi red social" title="sigueme" src="img/logo-google+.png" height="70" width="85" class="btn btn-lg btn-default"></a>
+
+    </div>
+
+  </div><!--End of container-->
+</div><!--End of jumbotron-->
+
+
+
+<!--Video-->
+
+<div class="container-fluid">
+  <section>
+    <div class="page-header" id="video">
+      <h1>Video.<small>   Algo de material en video.</small></h1>
+    </div>
+
+
+<iframe class="" width="100%" height="525" src="https://www.youtube.com/embed/mtUSUwT70f0" frameborder="0" allowfullscreen></iframe>
+<br>
+<iframe class="" width="100%" height="525" src="https://www.youtube.com/embed/XLgELHI_zqw" frameborder="0" allowfullscreen></iframe>
+<!--<br>
+<iframe class="" width="49%" height="315" src="https://www.youtube.com/embed/ElMOcNuQaA4" frameborder="0" allowfullscreen></iframe>
+<iframe class="" width="49%" height="315" src="https://www.youtube.com/embed/ZtGg4qTDOxU" frameborder="0" allowfullscreen></iframe>-->
+
+
+
+</section>
+</div>
+<!--End of video-->
+
+<center>
+<img class="separador" src="img/separador-1.png" width="500" alt="separador">
+</center>
+
+<!--Audio-->
+<!--soundcloud player-->
+<div class="container">
+  <section>
+    <div class="container" id="audio">
+      <h1>Audio.<small>   No te pierdas de escuchar mis audios!</small></h1>
+    </div>
+
+    <iframe width="100%" height="266" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331384004&amp;color=ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp"></iframe>
+   <!-- <iframe width="100%" height="266" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331385029&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>-->
+    <iframe width="100%" height="266" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/324282960&amp;color=ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    <!--<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331385013&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>-->
+    <iframe width="100%" height="266" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/323880109&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+  </section>
+</div>
+
+<!--End Audio-->
+
+<center>
+<img class="separador"src="img/separador-1.png" width="500" alt="separador">
+</center>
+
+<!--Photo-->
+
+<div class="container">
+  <section>
+    <div class="page-header" id="photo">
+  <h1>Foto.<small>    Estas son mis fotos.</small></h1>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="img/saltando.png" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="img/tocando-flauta.png" class="thumbnail img-responsive">
+      </a>
+  </div>
+   <div class="col-lg-4 col-sm-6 col-xs-12">
+      <a href="#">
+           <img src="img/tocando-concara.jpg" class="thumbnail img-responsive">
+      </a>
+  </div>
+  <div class="col-lg-4 col-sm-6 col-xs-12">
+     <a href="#">
+          <img src="img/tocando-criolla.png" class="thumbnail img-responsive">
+     </a>
+ </div>
+ <div class="col-lg-4 col-sm-6 col-xs-12">
+     <a href="#">
+          <img src="img/sentado-cantando.jpg" class="thumbnail img-responsive">
+     </a>
+ </div>
+ <div class="col-lg-4 col-sm-6 col-xs-12">
+     <a href="#">
+          <img src="img/sentado-costado-tocando.jpg" class="thumbnail img-responsive">
+     </a>
+ </div>
+ <div class="col-lg-4 col-sm-6 col-xs-12">
+     <a href="#">
+          <img src="img/tocando.jpg" class="thumbnail img-responsive">
+     </a>
+ </div>
+</div>
+</section>
+</div>
+<!--comment-->
+<!--
+<div class="container">
+  <section>
+    <div class="page-header" id="photo">
+      <h1>Photo.<small></small></h1>
+    </div>
+
+    <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+
+
+      <ol class="carousel-indicators">
+        <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+        <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+        <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/saltando.png" alt="aca va la descripcion de la imagen">
+          <div class="carousel-caption">
+            <h3></h3>-->
+            <!--<p>It is creativity tailored to your needs.</p>-
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tocando-flauta.png" alt="aca va la descripcion de la imagen">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tocando-concara.jpg" alt="aca va la descripcion de la imagen">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/tocando-criolla.png" alt="aca va la descripcion de la imagen">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      
+      </div> <!--End of carousel inner
+      <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"</span></a>
+
+      <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"</span></a>
+    </div> 
+    <!--End of Photo-->
+  </section>
+</div>
+
+<center>
+<img class="separador"src="img/separador-1.png" width="500" alt="separador">
+</center>
+
+<!--Bio-->
+
+<div class="container">
+  <section>
+    <div class="page-header" id="bio">
+      <h1>Bio.<small>   Mi biografía.</small></h1>
+    </div><!--End page header-->
+
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion"></a>
+            <!--Bio corta-->
+          </div><!--End panel title-->
+          <div id="collapse-1" class="panelle-collapse collapse in">
+            <div class="panel-body">
+              <div class="col-sm-6">
+                <p class="p" style="text-align:justify">NAPAL es un cantautor nacido en Argentina. De familia con raíces originarias de su país, pero también vascas y belgas. Actualmente vive en Buenos Aires, Argentina, en el corazón de Sudamérica pero trabaja por todo el mundo. Su carrera empezó pronto como guitarrista, lo que lo llevó directamente a la música latinoamericana en toda su expresión pero también se interesó por el jazz, la bossanova y la música electrónica. En su proyecto, busca incluir fuentes de muy distinta naturaleza, en particular la debilidad por las historias y el impulso por plasmar las emociones en canciones, los paisajes de su inconsciente, con sus culturas, rituales y ritmos. Por esto su música irradia una comprensión íntima de la naturaleza humana, desde la impronta de su sonido a la suave consonancia de sus canciones. En esta mezcla siempre prevalece un delicado balance entre fuerzas: su música es profundamente armónica pero sin descuidar la melodía ni el ritmo, y a pesar de dejarse influir por artistas de diferentes tiempos y espacios, nunca deja de ser íntima.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/foto-bio.jpg" alt="" width="500">
+            </div>
+            </div>
+          </div>
+        </div><!--end panel collapse-->
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+            Bio extendida.
+            </a>
+          </div><!--End panel title-->
+          <div id="collapse-2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-6">
+                <p class="p" style="text-align:justify">
+                  Estudió en el conservatorio de música clásica José Hernandez y Juan José Castro y estudió en la escuela de música popular SADEM del
+                  Sindicato Argentino de Músicos. También realizó sus estudios en la Tecnicatura de Música Popular de la Facultad de Bellas Artes de la
+                  Universidad de la Plata. <br><br>Estudió con profesores: Alejandro Morandini, Tito Gallardo, Juan Benitez, Juan Carlos Botto.<br><br>
+                  Estudió y aprendió con alumnos.Estudió solo y acompañado, estudió, ensayó, practicó y aprendió.<br><br>
+                  Conoció canciones de otros.
+                  <br><br>
+                  Conoció canciones que venían desde su interior
+                  <br><br>
+                  Las tocó en la guitarra.
+                  <br><br>
+                  Las cantó solo y acompañado.
+                  <br><br>
+                  Las canta hoy.
+                  <br><br>
+                  Creció en una casa donde se fomentaba la creatividad y el arte. Músico desde la infancia se relacionó con los sonidos, con los instrumentos y las canciones.<br>
+                  Su proceso creativo pasó a imprimirse en la música de muchas maneras, desde el canto y la guitarra hasta los instrumentos de viento como la quena y la flauta traversa.<br>
+                  Su misión es la de compartir la idea que todos podemos vivir en armonía y que el arte es el medio para lograrlo. <br>
+                  Quiere conocer el mundo y a la gente que vive en él. Y cantarles. Y contarles sus historias.<br><br>
+                  En la actualidad protagonizo NAPAL, un proyecto ecléctico que evoca las distintas emociones que generan los estilos de música de todos los tiempos.<br>
+                  Recorre el camino de la bossa y el jazz así como también el bolero y la música latinoamericana.<br><br>
+                  Participa actualmente en la banda "Peces del Aire" donde es flautista y cantante.<br><br>
+                  Anterior a esto participó como front-man de La Suerte de Ozu, una banda que fusiona la música latinoamericana, rioplatense con el jazz y la música funk, la formaron junto a amigos donde compuso letra y música de la mayoría de las canciones.<br><br>
+                  Fué guitarrista de la banda de reggae-rock Hecho en Casa  con la que se fueron de gira a Asunción, Paraguay y las provincias del noreste argentino.<br><br>
+                  Además junto a Darío Berocovich crearon Bakground Sounds, dúo de clarinete y guitarra con el que tocaban en restaurantes y lobbys de hotel.<br><br>
+                  Asimismo con el Dúo Napal-Sanabria realizaron presentaciones en distintos salones y quintas de fiestas así como restaurantes y teatros.<br><br>
+                  También con Karina Rechimuzzi realizaron un tour por la provincia de Santiago del Estero.<br><br>
+                  Estuvo en uno de los episodios de proyecto 48 de la cadena TNT junto a la orquesta del Conservatorio de música José Hernandez.<br><br>
+                  Fué ayudante de la profesora Francisca "Pepa" Pascal.<br><br>
+                </p>
+                </div>
+
+                <div class="col-sm-6">
+                  <img src="img/foto-bio01.jpg" alt="" width="500">
+                </div>
+
+          </div>
+        </div><!--end panel collapse-->
+      </div>
+    </div>
+  </div><!--end panel group-->
+</div>
+
+
+
+  </section>
+</div><!--end container-->
+
+
+
+<!--End of Bio-->
+
+
+<center>
+<img class="separador"src="img/separador-1.png" width="500" alt="separador">
+</center>
+
+
+
+
+<!--contact-->
+
+<div class="container">
+  <section>
+    <div class="page-header" id="contact">
+      <h1>Contacto!<small></small></h1>
+    </div><!--End page header-->
+
+    <div class="row">
+      <div class="col-lg-4">
+        <p></p>
+
+        <address>
+          <strong>Napal Pvt-ltd</strong></br>
+          info@napal.co</br>
+          +54 9 11 6998 5281</br>
+        </address>
+      </div>
+
+      <div class="col-lg-8">
+        <form class="form-horizontal" action="" method="post">
+          <div class="form-group">
+          <label for="user-name" class="col-lg-2 control-label">Nombre</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="user-name" placeholder="Escriba su nombre">
+            </div>
+          </div><!--end form group-->
+
+          <div class="form-group">
+          <label for="user-email" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="user-email" placeholder="Escriba su e-mail">
+            </div>
+          </div> <!--end form group-->
+
+          <div class="form-group">
+          <label for="user-subject" class="col-lg-2 control-label">Asunto</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="user-subject" placeholder="Escriba su asunto">
+            </div>
+          </div><!--end form group-->
+
+          <div class="form-group">
+          <label for="user-message" class="col-lg-2 control-label">    Mensaje</label>
+            <div class="col-lg-10">
+              <textarea name="user-message" rows="8" cols="80" placeholder=" Escriba un mensaje"></textarea>
+            </div>
+          </div><!--end form group-->
+
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="submit" class="btn btn-primary" name="button">Enviar!</button>
+            </div>
+          </div>
+
+        </form>
+       </div>
+      </div>
+    </div><!--end row-->
+  </section>
+</div>
+
+<!--Footer-->
+<footer>
+
+      <ul class="list-inline" style="text-align: center;">
+        <li><a href="https://twitter.com/napalsounds">Twitter</a></li>
+        <li><a href="https://www.facebook.com/napalsounds/">Facebook</a></li>
+        <li><a href="https://www.youtube.com/channel/UCF99JrpkeYg8Lv9jDHF_YPg">Youtube</a></li>
+        <li><a href="https://www.instagram.com/napalsounds/">Instagram</a></li>
+        <li><a href="https://soundcloud.com/napal-sounds">Soundcloud</a></li>
+        <li><a href="https://plus.google.com/107330718390201851795">Google+</a></li>
+      </ul>
+
+<p style="text-align: center;">&copy; Copyright @ 2017 </p>
+    </form>
+  </div><!--End of container-->
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>﻿
+
+  <!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- PROBANDO CON JQUERY
+
+<script>
+  $(document).ready(function(){
+  $("button").addClass("animated fadeOut");
+  $("").addClass("animated fadeOut");
+});
+</script>-->
+</body>
+
+</html>

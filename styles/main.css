@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+/*--Este es el background--*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-attachment: fixed;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* block bem component */
+.block {
+    display: block;
+    padding: 30px 30px 30px 124px;
+    
+}
+
+.block--small {
+    width: 70%;
+}
+/* block contains */
+.block--contains-big {
+    padding: 54px 54px 54px 124px;
+    margin-bottom: 40px;
+}
+
+
+.block--contains-medium {
+    padding: 44px 34px;
+    
+}
+
+/* block opacities */
+.block--opacity-half {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.block--opacity-full {
+    background-color: #fff;
+}
+
+/*block elements*/
+
+.block__title {
+    font-size: 4em;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 900;
+}
+
+.block__subtitle {
+    font-size: 2em;
+    line-height: 1.1;
+    margin: 0; 
+    font-weight: 700; 
+}
+
+.block__par {
+    line-height: 1;
+    font-size: 1.2em;
+    font-weight: 300px;
+}
+
+/*container*/
+
+.container {
+    display: block;
+    max-width: 1024px;
+    margin: 0 auto;
+}
