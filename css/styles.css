@@ -1,4 +1,88 @@
-body {
+body{
+    font-family: 'Raleway', sans-serif;
+    }
+
+  h1 {
+        font-family: 'Anton', sans-serif;
+        font-weight: bold;
+        font-size: 65px;
+      }
+
+  h2 {
+      font-family: 'Anton', sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+    }
+  
+  .jumbotron {
+    padding-bottom: 88px !important;
+    margin-top: 40px; 
+    box-shadow: 1px 2px 5px #999; 
+    background-image: url(https://s1.1zoom.me/b5050/596/Evening_Forests_Mountains_Firewatch_Campo_Santo_549147_1920x1080.jpg);
+    zoom: 90%;
+  }
+
+#contenedor{
+      height: 100%;
+      width: 100%
+    }
+
+
+  p-clases{
+    font-size: 17px;
+    text-align: center;
+  }
+
+
+
+  p{
+    font-size: 16px;
+  }
+
+
+  .redondo{
+    border: solid 5px black;
+    border-radius: 50px;
+    margin-bottom: 45px 25px;
+    display: inline;
+    }
+
+
+    .item {
+      width: 100%;
+      height: auto;
+      /*height: auto;
+      top:0;
+      left:0;
+      position:fixed;
+      z-index: -1;*/
+  }
+
+  .carousel-inner {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+  }
+
+  .separador {
+    margin: 50px;
+  }
+
+  .minivideo {
+    align-content: right;
+  }
+
+
+  .navbar {
+      font-size: 22px;
+      /*box-shadow: 2px 2px 5px #999;*/
+      opacity: 0.9;
+  }
+  .navbar-btn {
+    margin-top: 20px;
+  }
+  
+  body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
